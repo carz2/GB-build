@@ -32,8 +32,11 @@ PRODUCT_PROPERTY_OVERRIDES := \
     keyguard.no_require_sim=true \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=true \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10
+    ro.ril.hsxpa=2 \
+    ro.ril.gprsclass=12
+    ro.ril.hsdpa.category=8
+    ro.ril.enable.dtm=1
+    ro.ril.hsupa.category=5
 
 PRODUCT_COPY_FILES := \
     development/data/etc/apns-conf.xml:system/etc/apns-conf.xml \
@@ -48,7 +51,7 @@ $(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 
 # Get a list of languages. We use the small list to save space
 # on smaller devices.
-$(call inherit-product, build/target/product/languages_small.mk)
+$(call inherit-product, build/target/product/languages_full.mk)
 
 $(call inherit-product, build/target/product/generic.mk)
 
