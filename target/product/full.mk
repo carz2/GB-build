@@ -33,9 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=true \
     ro.ril.hsxpa=2 \
-    ro.ril.gprsclass=12
-    ro.ril.hsdpa.category=8
-    ro.ril.enable.dtm=1
+    ro.ril.gprsclass=12 \
+    ro.ril.hsdpa.category=8 \
+    ro.ril.enable.dtm=1 \
     ro.ril.hsupa.category=5
 
 PRODUCT_COPY_FILES := \
